@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".ui.home.HomeActivity">
+
+        <ImageView
+            android:id="@+id/illustration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/ic_illustration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/intro"
+            android:textColor="@color/text_intro"
+            android:textSize="24sp"
+            android:layout_marginTop="42dp"
+            android:textStyle="normal"
+            android:textAlignment="center"
+            android:fontFamily="@font/mulish_regular"
+            app:layout_constraintEnd_toEndOf="@id/illustration"
+            app:layout_constraintStart_toStartOf="@+id/illustration"
+            app:layout_constraintTop_toBottomOf="@+id/illustration" />
+
+        <TextView
+            android:id="@+id/tv_policy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="126dp"
+            android:text="@string/policy"
+            android:textAlignment="center"
+            android:textColor="@color/text_intro"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/mulish_regular"
+            app:layout_constraintBottom_toTopOf="@+id/btn_startMessaging"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="18dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_startMessaging"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="24dp"
+            android:text="@string/start_messaging"
+            android:textColor="@color/white"
+            android:fontFamily="@font/mulish_regular"
+            android:background="@drawable/bg_btn_start_messaging"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
